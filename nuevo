@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Felipe ❤️ Karen</title>
+
+<style>
+*{
+ box-sizing:border-box;
+ font-family: 'Georgia', serif;
+}
+
+body{
+ margin:0;
+ background:linear-gradient(135deg,#120018,#3b0028,#090014);
+ color:white;
+ text-align:center;
+ min-height:100vh;
+ overflow-x:hidden;
+}
+
+#login{
+ height:100vh;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ flex-direction:column;
+}
+
+input{
+ padding:15px;
+ border-radius:20px;
+ border:none;
+ text-align:center;
+ font-size:18px;
+}
+
+button{
+ margin-top:15px;
+ padding:12px 30px;
+ border:none;
+ border-radius:25px;
+ background:#ff4d88;
+ color:white;
+ font-size:18px;
+}
+
+#contenido{
+ display:none;
+ padding:20px;
+}
+
+h1{
+ font-size:40px;
+}
+
+.corazon{
+ font-size:60px;
+ animation:latir 1.5s infinite;
+}
+
+@keyframes latir{
+50%{transform:scale(1.2);}
+}
+
+.card{
+ background:rgba(255,255,255,.12);
+ border-radius:25px;
+ padding:25px;
+ margin:25px 0;
+ backdrop-filter:blur(8px);
+}
+
+#contador{
+ font-size:22px;
+}
+
+.galeria{
+ display:flex;
+ flex-wrap:wrap;
+ justify-content:center;
+ gap:10px;
+}
+
+.galeria img{
+ width:45%;
+ border-radius:20px;
+}
+
+.carta{
+ line-height:1.7;
+ font-size:18px;
+}
+
+.estrella{
+ position:fixed;
+ width:5px;
+ height:5px;
+ background:white;
+ border-radius:50%;
+ animation:caer linear infinite;
+}
+
+@keyframes caer{
+from{transform:translateY(-20px);}
+to{transform:translateY(100vh);}
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div id="login">
+
+<div class="corazon">❤️</div>
+
+<h2>Nuestra historia</h2>
+
+<p>Ingresa nuestra fecha especial</p>
+
+<input id="clave" type="password" placeholder="Contraseña">
+
+<button onclick="entrar()">Entrar</button>
+
+</div>
+
+
+
+<div id="contenido">
+
+<h1>Felipe ❤️ Karen</h1>
+
+<div class="card">
+
+<h2>Desde el 03 de octubre de 2024</h2>
+
+<p id="contador"></p>
+
+</div>
+
+
+<div class="card">
+
+<h2>Para ti ❤️</h2>
+
+<p class="carta">
+
+Karen,
+
+Gracias por llegar a mi vida y convertir momentos normales en recuerdos especiales.
+
+Quiero que esta página sea un pequeño reflejo de todo lo que hemos construido juntos: nuestras risas, nuestras conversaciones, nuestros sueños y cada instante que nos ha unido.
+
+No importa cuánto tiempo pase, siempre voy a valorar la historia que estamos escribiendo.
+
+Gracias por ser tú.
+
+Te quiero ❤️
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Nuestros recuerdos 📸</h2>
+
+<div class="galeria">
+
+<img src="foto1.jpg">
+<img src="foto2.jpg">
+<img src="foto3.jpg">
+<img src="foto4.jpg">
+
+</div>
+
+<p>
+Cambia estas imágenes por nuestras fotos.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Una canción para nosotros 🎵</h2>
+
+<audio controls>
+
+<source src="cancion.mp3" type="audio/mpeg">
+
+</audio>
+
+</div>
+
+
+
+<div class="card">
+
+<h2>Siempre tú ❤️</h2>
+
+<p>
+"Entre millones de personas, encontré a alguien con quien quiero seguir creando recuerdos."
+</p>
+
+</div>
+
+
+</div>
+
+
+
+<script>
+
+
+function entrar(){
+
+let clave=document.getElementById("clave").value;
+
+if(clave==="03102024"){
+
+document.getElementById("login").style.display="none";
+
+document.getElementById("contenido").style.display="block";
+
+}
+
+else{
+
+alert("Contraseña incorrecta ❤️");
+
+}
+
+}
+
+
+
+let inicio=new Date("2024-10-03");
+
+
+function actualizar(){
+
+let ahora=new Date();
+
+let diferencia=ahora-inicio;
+
+
+let dias=Math.floor(diferencia/(1000*60*60*24));
+
+let horas=Math.floor((diferencia/(1000*60*60))%24);
+
+let minutos=Math.floor((diferencia/(1000*60))%60);
+
+let segundos=Math.floor((diferencia/1000)%60);
+
+
+document.getElementById("contador").innerHTML=
+
+" llevamos juntos:<br><b>"+dias+
+" días "+horas+
+" horas "+minutos+
+" minutos "+segundos+
+" segundos ❤️</b>";
+
+}
+
+
+setInterval(actualizar,1000);
+
+actualizar();
+
+
+
+for(let i=0;i<40;i++){
+
+let estrella=document.createElement("div");
+
+estrella.className="estrella";
+
+estrella.style.left=Math.random()*100+"%";
+
+estrella.style.animationDuration=(3+Math.random()*5)+"s";
+
+document.body.appendChild(estrella);
+
+}
+
+
+</script>
+
+
+</body>
+</html>
