@@ -1,0 +1,232 @@
+// ===============================
+// FELIPE ❤️ KAREN
+// ===============================
+
+// Fecha en que comenzaron como novios
+const startDate = new Date("2024-10-03T00:00:00");
+
+const contador = document.getElementById("contador");
+
+function actualizarContador() {
+
+const ahora = new Date();
+
+let diferencia = ahora - startDate;
+
+const segundos = Math.floor(diferencia / 1000);
+
+const dias = Math.floor(segundos / 86400);
+
+const horas = Math.floor((segundos % 86400) / 3600);
+
+const minutos = Math.floor((segundos % 3600) / 60);
+
+const seg = segundos % 60;
+
+contador.innerHTML = `
+
+<div class="contador-box">
+
+❤️
+
+<br><br>
+
+<b>${dias}</b> días
+
+<br>
+
+${horas} horas
+
+<br>
+
+${minutos} minutos
+
+<br>
+
+${seg} segundos
+
+</div>
+
+`;
+
+}
+
+setInterval(actualizarContador,1000);
+
+actualizarContador();
+
+
+// ===============================
+// BOTÓN ENTRAR
+// ===============================
+
+const sobre = document.getElementById("openEnvelope");
+
+const musica = document.getElementById("bgMusic");
+
+sobre.addEventListener("click",()=>{
+
+document.querySelector(".letter").style.transform="translateY(-170px)";
+
+setTimeout(()=>{
+
+document.getElementById("contenido").scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+},1200);
+
+if(musica){
+
+musica.play().catch(()=>{});
+
+}
+
+});
+
+document.getElementById("contenido").scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+musica.play();
+
+});
+// ===============================
+// CORAZONES FLOTANDO
+// ===============================
+
+const heartsContainer = document.getElementById("hearts-container");
+
+function crearCorazon(){
+
+const corazon = document.createElement("div");
+
+corazon.classList.add("heart");
+
+corazon.innerHTML="❤️";
+
+corazon.style.left=Math.random()*100+"vw";
+
+corazon.style.fontSize=(18+Math.random()*25)+"px";
+
+corazon.style.animationDuration=(5+Math.random()*5)+"s";
+
+heartsContainer.appendChild(corazon);
+
+setTimeout(()=>{
+
+corazon.remove();
+
+},10000);
+
+}
+
+setInterval(crearCorazon,700);
+
+
+// ===============================
+// ANIMACIÓN DE APARICIÓN
+// ===============================
+
+const observer = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll("section").forEach(sec=>{
+
+sec.classList.add("hidden");
+
+observer.observe(sec);
+
+});
+/* Animaciones */
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(80px);
+
+transition:1s;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* Corazones */
+
+#hearts-container{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+z-index:999;
+
+}
+
+.heart{
+
+position:absolute;
+
+bottom:-50px;
+
+animation:flotar linear forwards;
+
+}
+
+@keyframes flotar{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+opacity:0;
+
+}
+
+15%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Felipe ❤️ Karen</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="loader">
+
+<div class="loader-content">
+
+<p class="loader-text">
+
+Hay personas que llegan a nuestra vida...
+
+</p>
+
+</div>
+
+</div>
+
+<section id="intro">
+
+<div class="stars"></div>
+
+<div class="envelope-container">
+
+<div class="envelope" id="openEnvelope">
+
+<div class="seal">❤️</div>
+
+<div class="front"></div>
+
+<div class="letter">
+
+<h2>Para Karen</h2>
+
+<p>
+He hecho algo muy especial para ti.
+<br><br>
+Ábrelo con el corazón.
+</p>
+
+</div>
+
+</div>
+
+<p class="tap-text">
+
+Toca el sobre para abrirlo
+
+</p>
+
+</div>
+
+</section><section id="intro">
+
+<div class="stars"></div>
+
+<div class="envelope-container">
+
+<div class="envelope" id="openEnvelope">
+
+<div class="seal">❤️</div>
+
+<div class="front"></div>
+
+<div class="letter">
+
+<h2>Para Karen</h2>
+
+<p>
+He hecho algo muy especial para ti.
+<br><br>
+Ábrelo con el corazón.
+</p>
+
+</div>
+
+</div>
+
+<p class="tap-text">
+
+Toca el sobre para abrirlo
+
+</p>
+
+</div>
+
+</section><section id="intro">
+
+<div class="stars"></div>
+
+<div class="envelope-container">
+
+<div class="envelope" id="openEnvelope">
+
+<div class="seal">❤️</div>
+
+<div class="front"></div>
+
+<div class="letter">
+
+<h2>Para Karen</h2>
+
+<p>
+He hecho algo muy especial para ti.
+<br><br>
+Ábrelo con el corazón.
+</p>
+
+</div>
+
+</div>
+
+<p class="tap-text">
+
+Toca el sobre para abrirlo
+
+</p>
+
+</div>
+
+</section>
+
+<main id="contenido">
+<div id="hearts-container"></div>
+
+<audio id="bgMusic" loop>
+    <source src="music/quedate.mp3" type="audio/mpeg">
+</audio>
+
+<section class="contador">
+
+<h2>
+
+Nuestro tiempo juntos
+
+</h2>
+
+<div id="contador"></div>
+
+<p>
+
+Y espero que este contador nunca deje de crecer.
+
+</p>
+
+</section>
+<section class="timeline">
+
+<h2>Nuestra historia</h2>
+
+<div class="timeline-card">
+
+<h3>🌹 12 de agosto de 2024</h3>
+
+<p>
+
+Ese día nuestras vidas se cruzaron por primera vez.
+
+También fue el día de nuestro primer beso.
+
+Sin saberlo, ese momento sería el comienzo de la historia más bonita que he vivido.
+
+</p>
+
+</div>
+
+<div class="timeline-card">
+
+<h3>❤️ 3 de octubre de 2024</h3>
+
+<p>
+
+Ese día decidimos empezar oficialmente esta aventura juntos.
+
+Desde entonces cada abrazo, cada risa, cada salida y cada recuerdo contigo se convirtió en un tesoro para mí.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="gallery">
+
+<h2>Nuestros recuerdos 📸</h2>
+
+<p class="gallery-text">
+
+Cada fotografía guarda un pedacito de nuestra historia.
+
+Tócalas para verlas más grandes.
+
+</p>
+
+<div class="gallery-grid">
+
+<img src="images/foto1.jpg" alt="">
+
+<img src="images/foto2.jpg" alt="">
+
+<img src="images/foto3.jpg" alt="">
+
+<img src="images/foto4.jpg" alt="">
+
+<img src="images/foto5.jpg" alt="">
+
+<img src="images/foto6.jpg" alt="">
+
+<img src="images/foto7.jpg" alt="">
+
+<img src="images/foto8.jpg" alt="">
+
+<img src="images/foto9.jpg" alt="">
+
+<img src="images/foto10.jpg" alt="">
+
+</div>
+
+</section>
+<section class="letter">
+
+<h2>💌 Una carta para ti, mi vida</h2>
+
+<div class="letter-content">
+
+<p>Mi amor...</p>
+
+<p>
+Si estás leyendo esto es porque quería encontrar una forma diferente de abrirte mi corazón.
+Quizá esta página nunca alcance a demostrarte todo lo que siento por ti, pero cada palabra fue escrita pensando únicamente en ti.
+</p>
+
+<p>
+Desde aquel <strong>12 de agosto de 2024</strong>, cuando nos conocimos y nos dimos nuestro primer beso, mi vida cambió para siempre.
+Todavía recuerdo cuando nos arrunchamos por primera vez.
+Ese momento sigue siendo uno de los recuerdos más bonitos que tengo.
+Fue ahí donde empecé a sentir que contigo estaba en paz.
+</p>
+
+<p>
+Hay muchísimas cosas que amo de ti.
+Amo la manera en que me cuidas, la forma en que siempre te preocupas por mí y haces todo lo posible para que yo esté bien.
+Gracias por estar pendiente de mí incluso cuando tú también tienes tus propios problemas.
+</p>
+
+<p>
+Y hay algo que probablemente nunca te he dicho lo suficiente...
+Me encantan esos huequitos que aparecen en tus cachetes cuando sonríes.
+Podría pasar horas viendo esa sonrisa porque tiene el poder de alegrarme cualquier día.
+</p>
+
+<p>
+Hoy también quiero pedirte perdón.
+Perdón por esas veces en las que mi forma de pensar te hizo sentir incómoda.
+Perdón por mi indecisión.
+Perdón por los momentos en los que agoté tu paciencia.
+Y perdón por no demostrarte siempre todo el amor que llevo dentro.
+</p>
+
+<p>
+Quiero cambiar.
+Quiero aprender.
+Quiero convertirme en una mejor versión de mí para ti.
+No porque me lo pidan, sino porque te amo y quiero hacerte feliz.
+</p>
+
+<p>
+Sueño con viajar contigo, conocer muchos lugares de tu mano, construir un hogar lleno de amor y algún día formar una familia contigo.
+Ese es el futuro que imagino cuando pienso en nosotros.
+</p>
+
+<p>
+Espero que esta página no sea solo un detalle bonito.
+Espero que sea el comienzo de una etapa nueva para nosotros.
+Una etapa con más comprensión, más paciencia, más abrazos y muchísimo más amor.
+</p>
+
+<p>
+Gracias por existir.
+Gracias por cuidarme.
+Gracias por llegar a mi vida.
+Y gracias por seguir aquí.
+</p>
+
+<p class="firma">
+
+Con todo mi amor,
+
+<br><br>
+
+<b>Felipe ❤️</b>
+
+</p>
+
+</div>
+
+</section>
+<section class="final-message">
+
+    <h2>Un último detalle... ❤️</h2>
+
+    <p>
+
+        Mi amor...
+
+        Espero que cuando hayas terminado de leer esta página recuerdes una sola cosa.
+
+        Todo esto lo hice porque te amo.
+
+        Porque eres la mujer con la que sueño viajar.
+
+        Con la que sueño construir un hogar.
+
+        Con la que sueño formar una familia.
+
+        Y porque deseo que este sea el comienzo de una etapa mucho más bonita para nosotros.
+
+    </p>
+
+    <p>
+
+        Si me das la oportunidad...
+
+        Voy a seguir demostrando todos los días que elegirte fue la mejor decisión de mi vida.
+
+    </p>
+
+    <h3>
+
+        Quédate...
+
+    </h3>
+
+    <p>
+
+        No solamente como la canción.
+
+        Quédate en mi vida.
+
+        Quédate en mis planes.
+
+        Quédate en mi futuro.
+
+    </p>
+
+    <p>
+
+        ❤️ Gracias por existir, mi vida. ❤️
+
+    </p>
+
+</section>
+
+<footer>
+
+<p>
+
+Felipe ❤️ Karen
+
+<br>
+
+Para siempre.
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
